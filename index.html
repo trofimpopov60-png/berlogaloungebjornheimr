@@ -549,11 +549,18 @@ section{position:relative;}
 .to-top.visible{opacity:1;pointer-events:auto;transform:translateY(0);}
 .to-top:hover{border-color:var(--accent);color:var(--accent);}
 
-  @media (max-width: 480px) {
+/* ===== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ ===== */
+@media (max-width: 480px) {
     .brand {
-        font-size: 1rem;   /* ← уменьшаем размер шрифта на телефонах */
-        letter-spacing: 0.08em; /* ← чуть сжимаем буквы */
+        font-size: 0.80rem;      /* ← уменьшаем текст */
+        letter-spacing: 0.08em;   /* ← сжимаем буквы */
+        gap: 0.4em;              /* ← расстояние между иконкой и текстом */
     }
+    .brand svg {
+        width: 18px;             /* ← уменьшаем иконку */
+        height: 18px;
+    }
+}
 }
 </style>
 </head>
