@@ -566,6 +566,39 @@ section{position:relative;}
         letter-spacing: 0;
     }
 }
+
+  /* ============================================================
+   ФИНАЛЬНАЯ АДАПТАЦИЯ HERO (ПРИНУДИТЕЛЬНАЯ)
+   ============================================================ */
+
+/* Для телефонов (ширина до 480px) */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem !important;   /* ← принудительно уменьшаем */
+        letter-spacing: 0.01em !important;
+        white-space: nowrap !important;  /* ← запрещаем перенос */
+        display: block;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;               /* ← скрываем лишнее, если вдруг вылезет */
+    }
+}
+
+/* Для очень маленьких телефонов (до 400px) */
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 1.8rem !important;
+        letter-spacing: 0 !important;
+    }
+}
+
+/* Для узких телефонов (до 360px) */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.5rem !important;
+        letter-spacing: -0.02em !important; /* ← сжимаем буквы ещё сильнее */
+    }
+}
 </style>
 </head>
 <body>
