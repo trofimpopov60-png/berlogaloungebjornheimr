@@ -548,6 +548,13 @@ section{position:relative;}
 }
 .to-top.visible{opacity:1;pointer-events:auto;transform:translateY(0);}
 .to-top:hover{border-color:var(--accent);color:var(--accent);}
+
+  @media (max-width: 480px) {
+    .brand {
+        font-size: 1rem;   /* ← уменьшаем размер шрифта на телефонах */
+        letter-spacing: 0.08em; /* ← чуть сжимаем буквы */
+    }
+}
 </style>
 </head>
 <body>
